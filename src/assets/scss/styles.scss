@@ -10,6 +10,8 @@
 @import "_components/header";
 @import "_components/hero";
 @import "_components/about";
+@import "_components/brands";
+@import "_components/call-to-action";
 @import "_components/banner";
 @import "_components/footer";
 
@@ -96,7 +98,7 @@ body{
   margin: 0;
   padding: 0;
   color: $text-color;
-  line-height: 1.6;
+  line-height: 1.5;
   font-family: $base-font;
   font-size: 1.6rem;
   font-weight: 400;
@@ -116,16 +118,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 }
 
 .container{
-    margin: auto;
-    width: 100%;
-    max-width: calc(1024px + #{$gutter * 2}) ;
-    padding: 0 $gutter;
-
-    &--fluid{
-      width: 100%;
-      max-width: 100%;
-    }
-
+  @include container;
 }
 
 .t-align{

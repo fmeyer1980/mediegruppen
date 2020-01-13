@@ -6,17 +6,15 @@
         </div>
         <div class="bottom">
             {% for item in about.fokus %}
-            <div class="item">
-                {# <img class="image" src="{{ settings.claudinaryUrl }}c_fill,f_auto,q_70,dpr_auto,w_180,h_180{{ settings.claudinaryFolder }}{{ item.image }}" alt=""> #}
+            <a class="item" href="/dna">
                 <img class="image"
-                srcset="
-                {{ settings.claudinaryUrl }}f_auto,q_70,w_180,h_180,c_fill{{ settings.claudinaryFolder }}{{ item.image }} 1x,
-                {{ settings.claudinaryUrl }}f_auto,q_70,w_300,h_300,c_fill{{ settings.claudinaryFolder }}{{ item.image }} 2x"
-                alt="{{ item.heading }}"
-            >
-                {{ item.heading }}
-                {{ item.text }}
-            </div>
+                    srcset="
+                    {{ settings.claudinaryUrl }}f_auto,q_70,w_180,h_180,c_fill{{ settings.claudinaryFolder }}{{ item.image }} 1x,
+                    {{ settings.claudinaryUrl }}f_auto,q_70,w_300,h_300,c_fill{{ settings.claudinaryFolder }}{{ item.image }} 2x"
+                alt="{{ item.heading }}">
+                <h3 class="heading h4">{{ item.heading }}</h3>
+                <p class="text">{{ item.text }}</p>
+            </a>
             {% endfor %}
         </div>
     </div>

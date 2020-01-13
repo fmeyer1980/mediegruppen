@@ -1,0 +1,9 @@
+<div class="brands">
+    <div class="container">
+        <div class="brands-wrapper">
+            {% for item in brands %}
+                <img class="image" src="{{ settings.claudinaryUrl }}f_auto,q_auto{{ settings.claudinaryFolder }}{{ item.image }}">
+            {% endfor %}
+        </div>
+    </div>
+</div>

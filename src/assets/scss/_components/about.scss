@@ -1,13 +1,14 @@
 .about{
 
     &--home{
+        padding: var(--section-padding) 0;
 
         .top{
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            padding: var(--section-padding) 0;
+            padding-bottom: var(--section-padding);
 
             .heading{
                 margin-top: 0;
@@ -15,7 +16,7 @@
             }
     
             .text{
-                font-family: "Stag-Book",'Raleway',Arial,sans-serif;
+                font-family: $heading-font;
                 max-width: 80ch;
                 font-weight: 400;
                 margin-bottom: 0;
@@ -24,11 +25,28 @@
         }
 
         .bottom{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: calc(var(--gutter) * 2);
 
             .item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
                 .image{
                     width: 18rem;
                     height: auto;
+                    margin-bottom: 1rem;
+                }
+
+                .heading{
+                    margin-bottom: 0;
+                }
+
+                .text{
+                    font-size: 1.4rem;
                 }
             }
         }
