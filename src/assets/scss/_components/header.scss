@@ -1,0 +1,75 @@
+.header{
+
+  /*----- MEDIA VARIABLER -----*/
+
+  // --header__height: 9rem;
+  --logo__size: 18rem;
+  // --main-nav__display:  block;
+  // --menu-icon__display: none;
+
+
+  @media (max-width: $screen-sm) {
+    --logo__size: 3.6rem;
+    // --main-nav__display:  none;
+    // --menu-icon__display: block;
+  }
+
+
+  /*----- STYLING -----*/
+
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  height: var(--header__height);
+  color: $black;
+
+
+  .top{
+    
+    background-color: $light-gray-light;
+
+    .container{
+      display: flex;
+      align-items: center;
+      height: 4rem;
+    }
+
+    .contact-info{
+      @include list-style-none;
+      display: flex;
+    }
+
+  }
+
+  .bottom{
+
+    .container{
+      display: flex;
+      align-items: center;
+      height: 10rem;
+    }
+
+    .logo{
+      padding-top: 1rem;
+        svg{
+          width: var(--logo__size);
+        }
+    }
+
+    .main-nav{
+      margin-left: auto;
+
+      &__menu{
+        @include list-style-none;
+        display: flex;
+
+        .item{
+          padding-left: 3rem;
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.hero{
+
+    /*----- MEDIA VARIABLER -----*/
+    
+   
+    /*----- STYLING -----*/
+
+    position: relative;
+    margin-top: 14rem;
+    overflow: hidden;
+
+    &__video{
+        width: 100%;
+        display: block;
+    }
+}

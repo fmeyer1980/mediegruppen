@@ -1,0 +1,43 @@
+.footer{
+
+    --footer__display: flex;
+    --margin-bottom: 0;
+    
+    @media (max-width: $screen-sm) {
+        --footer__display: block;
+        --margin-bottom: 3rem;
+    }
+
+
+    background-image: linear-gradient(to right, $primary, $secondary);
+    padding: 8rem 0;
+    border-bottom: 10px solid $black;
+    margin-top: auto;
+
+    .container{
+        display: var(--footer__display);
+
+        > * {
+            margin-bottom: var(--margin-bottom);
+        }
+
+        .logo{
+            margin-right: 10rem;
+            width: 20rem;
+            height: auto;
+            display: block;
+        }
+
+        .info{
+            margin-right: 10rem;
+        }
+
+        .heading{
+            margin-top: 0;
+        }
+
+        ul{
+            @include list-style-none;
+        }
+    }
+}

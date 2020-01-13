@@ -1,0 +1,11 @@
+{% set body_class = title %}
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+    {% include "components/banner.njk" %}
+    <div class="container">
+        <main>
+            {{ content | safe }}
+        </main>
+    </div>
+{% endblock content %}
