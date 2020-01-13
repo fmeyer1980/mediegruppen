@@ -2,6 +2,7 @@
 layout: "layouts/blog.njk"
 title: "Blog"
 description: Beskrivelse af hvad siden handler om.
+tags: ""
 eleventyNavigation:
   title: Blog
   key: blog

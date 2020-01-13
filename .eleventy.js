@@ -13,6 +13,13 @@ module.exports = function(config) {
     config.addPlugin(eleventyNavigationPlugin);
     config.addPlugin(syntaxHighlight);
     config.addPlugin(svgContents);
+    config.addFilter('formatDate', value => {
+        const ISOcode = 'en-GB';
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const d = new Date(value);
+        return `${d.toLocaleDateString(ISOcode, options)}`;
+      })
+      
     // config.cloudinaryCloudName = 'indexed';
     // config.srcsetWidths = [ 320, 640, 960, 1280, 1600, 1920, 2240, 2560 ];
     // config.fallbackWidth = 640;

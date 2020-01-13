@@ -12,6 +12,7 @@
 @import "_components/about";
 @import "_components/brands";
 @import "_components/call-to-action";
+@import "_components/blog";
 @import "_components/banner";
 @import "_components/footer";
 
@@ -46,8 +47,8 @@ $max_font: 10px;
 
 :root{
 
-  --section-padding: 6vmin;
-  --section-padding__small: 4vmin;
+  --section-padding: 5vmin;
+  --section-padding__small: 3vmin;
   --section-padding__large: 8vmin;
   --gutter: 3rem;
 

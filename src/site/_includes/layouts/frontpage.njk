@@ -6,4 +6,13 @@
     {% include "components/about--home.njk" %}
     {% include "components/brands.njk" %}
     {% include "components/call-to-action.njk" %}
+    
+    <div class="blog--home-slider">
+        <div class="container">
+        {% for item in collections.blog %}
+            {% include "components/blog--list.njk" %}
+        {% endfor %}
+        </div>
+        
+    </div>
 {% endblock content %}

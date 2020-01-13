@@ -27,14 +27,13 @@ brands:
   - image: "Stran_txxx39"
   - image: "damstahl-1_zxdifc"
   - image: "DTP_yigbvc"
-  - image: "trekantomraadet-1_jmdxvs"
   - image: "Optikerforeningen_pniaog"
   - image: "dansand-1_ijcezd"
-  - image: "dansand-1_x77ocu"
   - image: "region-syddanmark-1_t2q6mf"
   - image: "Hedensted_kommune_whvg3n"
   - image: "westfire-1_txsake"
   - image: "ITD_yv7ztz"
   - image: "logstor-1_iz4tky"
+  - image: "trekantomraadet-1_jmdxvs"
   
 ---
