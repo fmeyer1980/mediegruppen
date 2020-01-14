@@ -68,6 +68,14 @@
         .item{
           padding-left: 3rem;
           font-size: 1.8rem;
+
+          &.active{
+            color: $primary;
+          }
+
+          a{
+            color: inherit;
+          }
         }
 
       }

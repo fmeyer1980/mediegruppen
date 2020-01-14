@@ -10,5 +10,5 @@ gulp.task('css', function() {
       outputStyle: 'compressed'
     })
     .on('error', sass.logError))
-    .pipe(gulp.dest('./src/site/_includes/css'));
+    .pipe(gulp.dest('./src/assets/css'));
 });
