@@ -1,4 +1,5 @@
 ---
+layout: "layouts/default.njk"
 title: "Kontakt"
 description: Beskrivelse af hvad siden handler om.
 eleventyNavigation:

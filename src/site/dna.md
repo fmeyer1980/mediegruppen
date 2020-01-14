@@ -1,5 +1,5 @@
 ---
-layout: "layouts/frontpage.njk"
+layout: "layouts/default.njk"
 title: "DNA"
 description: Beskrivelse af hvad siden handler om.
 eleventyNavigation:

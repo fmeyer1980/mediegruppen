@@ -3,7 +3,7 @@
     &--home{
         background-color: $light-gray-light;
         padding: var(--section-padding);
-        
+
         &__slider{
             position: relative;
 
@@ -23,11 +23,6 @@
 
             }
             
-    
-            .blog--list__item{
-    
-            }
-            
         }
     }
     
@@ -44,10 +39,6 @@
                 font-size: 1.1rem;
                 opacity: .5;
                 padding: 1rem 2rem;
-
-                .date{
-                    
-                }
 
                 .author{
                     margin-left: auto;
