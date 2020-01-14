@@ -18,19 +18,40 @@
 
 <section class="blog--home">
     <div class="container">
-        <div class="blog--home__slider" id="intro">
-            <div data-glide-el="track" class="glide__track">
-                <div class="glide__slides">
-                    {% for item in collections.blog %}
-                        <div class="glide__slide">
-                            {% include "components/blog--list.njk" %}
-                        </div>
-                    {% endfor %}
+        <div class="blog--home__slider" id="blog-slider">
+            <div data-glide-el="controls">
+                <button class="arrows left" data-glide-dir="<">Start</button>
+                <div data-glide-el="track" class="glide__track">
+                    <div class="glide__slides">
+                        {% for item in collections.blog %}
+                            <div class="glide__slide">
+                                {% include "components/blog--list.njk" %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <button class="arrows right" data-glide-dir=">">End</button>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                    <button class="glide__bullet" data-glide-dir="=3"></button>
+                    <button class="glide__bullet" data-glide-dir="=4"></button>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<div class="glide" id="employe-slider">
+  <div class="glide__track" data-glide-el="track">
+    <ul class="glide__slides">
+      <li class="glide__slide">0</li>
+      <li class="glide__slide">1</li>
+      <li class="glide__slide">2</li>
+    </ul>
+  </div>
+</div>
 
 {# <div class="glide" id="intro">
   <div data-glide-el="track" class="glide__track">

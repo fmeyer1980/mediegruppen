@@ -5,6 +5,23 @@
         padding: var(--section-padding);
         
         &__slider{
+            position: relative;
+
+            .arrows{
+                position: absolute;
+                top: 50%;
+                background-color: transparent;
+                color: $black;
+
+                &.left{
+                    left: -10rem;
+                }
+
+                &.right{
+                    right: -10rem;
+                }
+
+            }
             
     
             .blog--list__item{

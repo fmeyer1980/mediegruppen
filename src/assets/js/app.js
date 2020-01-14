@@ -8,24 +8,26 @@ import Glide from '@glidejs/glide'
 
 // new RevealOnScroll(document.querySelectorAll(".reveal"), 85)
 
-var glide = new Glide('#intro', {
+var blogSlider = new Glide('#blog-slider', {
     type: 'carousel',
     perView: 4,
     navigation: true,
-    arrows: true,
     gap: 30,
-    // {String} Arrows wrapper class
-    arrowsWrapperClass: 'slider__arrows',
-    // {String} Main class for both arrows
-    arrowMainClass: 'slider__arrows-item',
-    // {String} Right arrow
-    arrowRightClass: 'slider__arrows-item--right',
-    // {String} Right arrow text
-    arrowRightText: 'next',
-    // {String} Left arrow
-    arrowLeftClass: 'slider__arrows-item--left',
-    // {String} Left arrow text
-    arrowLeftText: 'prev',
+    breakpoints: {
+      800: {
+        perView: 2
+      },
+      480: {
+        perView: 1
+      }
+    }
+  })
+
+  var employeSlider = new Glide('#employe-slider', {
+    type: 'carousel',
+    perView: 4,
+    navigation: true,
+    gap: 30,
     breakpoints: {
       800: {
         perView: 2
@@ -36,4 +38,5 @@ var glide = new Glide('#intro', {
     }
   })
   
-  glide.mount()
+blogSlider.mount()
+employeSlider.mount()
