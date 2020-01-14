@@ -8,9 +8,14 @@
     position: relative;
     margin-top: 14rem;
     overflow: hidden;
+    height: 27vw;
 
     &__video{
+        position: absolute;
+        top: 50%;
+        left: 50%;
         width: 100%;
         display: block;
+        transform: translateX(-50%) translateY(-50%);
     }
 }
