@@ -21,6 +21,8 @@
         <div class="blog--home__slider" id="blog-slider">
             <div data-glide-el="controls">
                 <button class="arrows left" data-glide-dir="<">Start</button>
+                <button class="arrows right" data-glide-dir=">">End</button>
+                </div>
                 <div data-glide-el="track" class="glide__track">
                     <div class="glide__slides">
                         {% for item in collections.blog %}
@@ -30,7 +32,7 @@
                         {% endfor %}
                     </div>
                 </div>
-                <button class="arrows right" data-glide-dir=">">End</button>
+                
                 <div class="glide__bullets" data-glide-el="controls[nav]">
                     <button class="glide__bullet" data-glide-dir="=0"></button>
                     <button class="glide__bullet" data-glide-dir="=1"></button>
@@ -39,7 +41,7 @@
                     <button class="glide__bullet" data-glide-dir="=4"></button>
                 </div>
             </div>
-        </div>
+        
     </div>
 </section>
 
