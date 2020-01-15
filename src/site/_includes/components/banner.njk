@@ -1,0 +1,13 @@
+<div class="banner">
+    <img class="image" importance="high"
+            sizes="(max-width: 1400px) 100vw, 1400px"
+            srcset="
+            {{ settings.claudinaryUrl }}c_scale,f_auto,q_auto,w_375{{ settings.claudinaryFolder }}{{ cover_image }} 375w,
+            {{ settings.claudinaryUrl }}c_scale,f_auto,q_auto,w_768{{ settings.claudinaryFolder }}{{ cover_image }} 768w,
+            {{ settings.claudinaryUrl }}c_scale,f_auto,q_auto,w_992{{ settings.claudinaryFolder }}{{ cover_image }} 992w,
+            {{ settings.claudinaryUrl }}c_scale,f_auto,q_auto,w_1280{{ settings.claudinaryFolder }}{{ cover_image }} 1280w,
+            {{ settings.claudinaryUrl }}c_scale,f_auto,q_auto,w_1400{{ settings.claudinaryFolder }}{{ cover_image }} 1400w"
+            src="{{ settings.claudinaryUrl }}c_scale,f_auto,q_auto,w_1400{{ settings.claudinaryFolder }}{{ cover_image }}"
+        alt="{{ title }}">
+    {{ cover_image }}
+</div>

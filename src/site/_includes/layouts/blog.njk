@@ -3,17 +3,10 @@
 
 {% block content %}
     {% include "components/banner.njk" %}
+    
     <div class="container">
         <main>
             {{ content | safe }}
-            {% for items in collections.blog %}
-                <a class="item" aria-label="{{items.data.title}}" href="{{ items.url }}"> 
-                    <img loading="lazy" class="image" src="{{ settings.claudinaryUrl }}c_thumb,g_center,f_auto,q_auto,w_470,h_380{{ settings.claudinaryFolder }}{{ items.data.image }}" alt="{{ items.data.title }}">
-                    <div class="content">
-                        <h3 class="heading">{{ items.data.title }}</h3>
-                    </div>
-                </a>
-            {% endfor %}
         </main>
     </div>
 {% endblock content %}
