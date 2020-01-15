@@ -1,5 +1,5 @@
 ---
-layout: "layouts/blog.njk"
+layout: "layouts/blog-list.njk"
 title: "Blog"
 description: Beskrivelse af hvad siden handler om.
 tags: ""

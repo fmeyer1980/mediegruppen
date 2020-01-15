@@ -1,10 +1,10 @@
 // import RevealOnScroll from './modules/RevealOnScroll'
 // import MobilMenu from './modules/mobilMenu'
-// import StickyHeader from './modules/stickyHeader'
+import StickyHeader from './modules/stickyHeader'
 import Glide from '@glidejs/glide'
 
 // let mobiMenu = new MobilMenu();
-// let stickyHeader = new StickyHeader();
+let stickyHeader = new StickyHeader();
 
 // new RevealOnScroll(document.querySelectorAll(".reveal"), 85)
 

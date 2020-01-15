@@ -7,11 +7,11 @@ class StickyHeader {
     }
 
     events() {
-        window.addEventListener("scroll", throttle(() => this.runOnScroll(), 200))
+        window.addEventListener("scroll", throttle(() => this.runOnScroll(), 0))
     }
 
     runOnScroll() {
-        if (window.scrollY > 80) {
+        if (window.scrollY > 40) {
             this.siteHeader.classList.add("header-scroll")
         } else {
             this.siteHeader.classList.remove("header-scroll")
