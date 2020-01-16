@@ -10,23 +10,17 @@
         <link rel="preload" href="/assets/fonts/StagSans-Book.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="/assets/fonts/StagSans-Semibold.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
-        <link rel="preload" href="/assets/css/styles.css" as="style" />
-        <link rel="stylesheet" href="/assets/css/styles.css" />
-        {# <link rel="dns-prefetch" href="https://res.cloudinary.com/fmeyer1980/video/upload/f_auto,q_auto,w_1800,h_500,c_fill/v1578763955/mediegruppen/hero-video"> #}
+        <style type="text/css">{% include "css/styles.css" %}</style>
     </head>
     <body class="{{ eleventyNavigation.key }}">
-        <script>
-            const hasSupport = 'loading' in HTMLImageElement.prototype;
-            document.documentElement.className = hasSupport ? 'pass' : 'fail';
-            document.querySelector('span').textContent = hasSupport;
-        </script>
         {% include "components/header.njk" %}
         {% block content %}
         
         {% endblock content %}
         {% include "components/footer.njk" %}
-        <script src="/assets/js/script.js" defer></script>
-        <script defer>
+
+        <script type="text/javascript" defer>
+            {% include "js/script.js" %}
             {% include "js/quicklink.js" %}
             window.addEventListener('load', () =>{
                 quicklink.listen();
