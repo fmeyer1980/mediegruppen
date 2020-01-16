@@ -2,10 +2,28 @@
 {% extends "layouts/base.njk" %}
 
 {% block content %}
-    {{ cover_image }}
-    <div class="container">
-        <main>
-            {{ content | safe }}
-        </main>
-    </div>
+    {% include "components/banner.njk" %}
+    <main class="main main--right-sidebar">
+        <div class="container">
+            <article class="main__content">
+                <h1 class="heading">{{ title }}</h1>
+                <p class="manchet">{{ manchet_text }}</p>
+                {% if top_text %}
+                    <div class="top-text">{{ top_text | safe }}</div>
+                {% endif %}
+                {% if quote %}
+                    <blockquote class="blockquote">
+                        <div class="blockquote__inner-wrapper">
+                            <p class="quote">{{ quote }}</p>
+                            <i class="author">{{ quote_author }}</i>
+                        </div>
+                    </blockquote>
+                {% endif %}
+                {{ content | safe }}
+            </article>
+            <aside class="aside--right">
+                {% include "components/newsletter.njk" %}
+            </aside>
+        </div>
+    </main>
 {% endblock content %}

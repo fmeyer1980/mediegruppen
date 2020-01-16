@@ -16,11 +16,10 @@
             }
     
             .text{
-                font-family: $heading-font;
                 max-width: 80ch;
-                font-weight: 400;
                 margin-bottom: 0;
-                line-height: 1.4;
+                font-size: 1.7rem;
+                font-family: "Stag-Book";
             }
         }
 
@@ -43,10 +42,6 @@
 
                 .heading{
                     margin-bottom: 0;
-                }
-
-                .text{
-                    font-size: 1.4rem;
                 }
             }
         }

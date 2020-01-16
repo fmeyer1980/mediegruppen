@@ -2,7 +2,7 @@
 // import MobilMenu from './modules/mobilMenu'
 import StickyHeader from './modules/stickyHeader'
 import Glide from '@glidejs/glide'
-import Swup from 'swup';
+// import Swup from 'swup';
 
 
 // let mobiMenu = new MobilMenu();
@@ -43,4 +43,4 @@ var blogSlider = new Glide('#blog-slider', {
 blogSlider.mount()
 employeSlider.mount()
 
-const swup = new Swup();
+// const swup = new Swup();

@@ -1,0 +1,42 @@
+.main{
+
+    h2{
+        font-size: 1.8rem;
+        margin-top: 1.5em;
+        margin-bottom: .3em;
+    }
+
+    p{
+        margin-top: 0;
+        margin-bottom: 1.5em;
+    }
+
+    &--right-sidebar{
+
+        .container{
+            display: grid;
+            grid-template-columns: 1fr .5fr;
+            grid-gap: calc(var(--gutter) * 2);
+        }
+        
+    }
+
+    &__content{
+
+        .heading{
+            margin-top: 0;
+        }
+
+        .manchet{
+
+        }
+
+    }
+
+    &__sidebar{
+
+        &--right{
+
+        }
+    }
+}
