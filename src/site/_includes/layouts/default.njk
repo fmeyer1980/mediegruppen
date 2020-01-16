@@ -21,8 +21,12 @@
                 {% endif %}
                 {{ content | safe }}
             </article>
-            <aside class="aside--right">
+            <aside class="main__aside--right">
                 {% include "components/newsletter.njk" %}
+                <div class="services-nav light">
+                    <h5 class="heading">Se også</h5>
+                    {% include "components/services-nav.njk" %}
+                </div>
             </aside>
         </div>
     </main>

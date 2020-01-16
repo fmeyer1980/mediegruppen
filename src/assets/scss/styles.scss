@@ -16,6 +16,7 @@
 @import "_components/banner";
 @import "_components/footer";
 @import "_components/newsletter";
+@import "_components/services-nav";
 
 @import "_layouts/main";
 
@@ -109,13 +110,13 @@ body{
   font-size: 1.4rem;
   font-weight: 400;
   background-color: $white;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   // letter-spacing: -.3px;
 }
 
 .transition-fade {
-  transition: .1s;
+  transition: .01s;
   opacity: 1;
 }
 
@@ -171,12 +172,6 @@ p{
       font-weight: 200;
     }
   }
-  
-  
-
-  
-  
-  
 }
 
 .container{

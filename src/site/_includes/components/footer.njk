@@ -2,8 +2,7 @@
     <div class="top">
         <div class="container">
             <div class="info">
-                <img loading="lazy" src="/assets/images/splatter.png" alt="Splatter">
-                {{ '/src/assets/images/logo_white.svg' | svgContents | safe }}
+                <img loading="lazy" src="/assets/images/splatter.png" alt="Splatter">}
                 <ul>
                     <li>design:kommunikation as</li>
                     <li>{{ settings.address }}</li>
@@ -14,13 +13,17 @@
             </div>
 
             <div class="contact">
-                <p class="heading h4">Kontakt</p>
+                <p class="heading h4">Det brænder vi for</p>
+                <nav class="services-nav dark">
+                    {% include "components/services-nav.njk" %}
+                </nav>
             </div>
         </div>
     </div>
     <div class="bottom">
         <div class="container">
-        
+            <a class="logo" href="/">{{ '/src/assets/images/logo_white.svg' | svgContents | safe }}</a>
+            <span class="copyright">Copyright © 2020 Mediegruppen. All rights reserved.</span>
         </div>
     </div>
 </footer>

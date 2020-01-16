@@ -1,4 +1,5 @@
 .main{
+    position: relative;
 
     h2{
         font-size: 1.8rem;
@@ -33,10 +34,14 @@
 
     }
 
-    &__sidebar{
+    &__aside{
+        position: sticky;
+        top: 10px;
 
         &--right{
-
+            // display: grid;
+            // grid-template-columns: 1fr;
+            // grid-gap: var(--gutter);
         }
     }
 }
