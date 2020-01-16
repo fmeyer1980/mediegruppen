@@ -14,15 +14,16 @@
     </head>
     <body class="{{ eleventyNavigation.key }}">
         {% include "components/header.njk" %}
-        {% block content %}
-        
-        {% endblock content %}
+
+        <div id="swup" class="transition-fade">
+            {% block content %}
+            
+            {% endblock content %}
+         </div>
         {% include "components/footer.njk" %}
 
         <script type="text/javascript" defer>
-            {% if layout == "layouts/frontpage.njk" %}
-                {% include "js/script.js" %}
-            {% endif %}
+            {% include "js/script.js" %}
             {% include "js/quicklink.js" %}
             window.addEventListener('load', () =>{
                 quicklink.listen();
