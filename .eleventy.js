@@ -9,7 +9,7 @@ module.exports = function(config) {
     config.addPassthroughCopy({ "src/assets/js": "assets/js" });
     config.addPassthroughCopy({ "src/assets/fonts": "assets/fonts" });
     config.addPassthroughCopy({ "src/assets/css": "assets/css" });
-    config.addPassthroughCopy("favicon.png");
+    config.addPassthroughCopy("favicon.ico");
     config.addPlugin(eleventyNavigationPlugin);
     config.addPlugin(syntaxHighlight);
     config.addPlugin(svgContents);
