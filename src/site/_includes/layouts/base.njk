@@ -22,8 +22,9 @@
          </div>
         {% include "components/footer.njk" %}
 
-        <script type="text/javascript" defer>
-            {% include "js/script.js" %}
+
+        <script src="/assets/js/script.js" defer></script>
+        <script defer>
             {% include "js/quicklink.js" %}
             window.addEventListener('load', () =>{
                 quicklink.listen();
