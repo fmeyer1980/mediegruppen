@@ -6,19 +6,16 @@
         <div class="container">
             <article class="main__content">
                 <div class="main__content__image-wrapper">
-                    <picture>
-                    
-                    </picture>
-                    <img class="image"
+                    <img class="image" src="{{ settings.claudinaryUrl }}c_scale,f_auto,q_auto,w_10{{ settings.claudinaryFolder }}{{ cover_image }}" alt="{{ title }}">
+                    {# <img class="image"
                         sizes="(max-width: 760px) 100vw, 760px"
                         srcset="
-                        {{ settings.claudinaryUrl }}c_scale,f_auto,q_auto,w_375,h_300{{ settings.claudinaryFolder }}{{ cover_image }} 375w,
-                        {{ settings.claudinaryUrl }}c_scale,f_auto,q_auto,w_768,h_600{{ settings.claudinaryFolder }}{{ cover_image }} 768w,
-                        {{ settings.claudinaryUrl }}c_scale,f_auto,q_auto,w_992,h_800{{ settings.claudinaryFolder }}{{ cover_image }} 992w,
-                        {{ settings.claudinaryUrl }}c_scale,f_auto,q_auto,w_1280{{ settings.claudinaryFolder }}{{ cover_image }} 1280w,
-                        {{ settings.claudinaryUrl }}c_scale,f_auto,q_auto,w_1400{{ settings.claudinaryFolder }}{{ cover_image }} 1400w"
-                        src="{{ settings.claudinaryUrl }}c_scale,f_auto,q_auto,w_1400{{ settings.claudinaryFolder }}{{ cover_image }}"
-                    alt="{{ title }}">
+                        {{ settings.claudinaryUrl }}c_scale,f_auto,q_auto,w_375{{ settings.claudinaryFolder }}{{ cover_image }} 375w,
+                        {{ settings.claudinaryUrl }}c_scale,f_auto,q_auto,w_768{{ settings.claudinaryFolder }}{{ cover_image }} 768w,
+                        {{ settings.claudinaryUrl }}c_scale,f_auto,q_auto,w_992{{ settings.claudinaryFolder }}{{ cover_image }} 992w,
+                        {{ settings.claudinaryUrl }}c_scale,f_auto,q_auto,w_1280{{ settings.claudinaryFolder }}{{ cover_image }} 1280w"
+                        src="{{ settings.claudinaryUrl }}c_scale,f_auto,q_auto,w_1280{{ settings.claudinaryFolder }}{{ cover_image }}"
+                    alt="{{ title }}"> #}
                 </div>
                 
                 <h1 class="heading">{{ title }}</h1>
