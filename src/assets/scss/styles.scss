@@ -124,6 +124,10 @@ html.is-animating .transition-fade {
   opacity: 0;
 }
 
+*:focus{
+  outline: none;
+}
+
 main{
   padding: var(--section-padding) 0;
   background-color: $light-gray-light;

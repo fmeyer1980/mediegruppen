@@ -1,5 +1,6 @@
 .banner{
-    height: 55rem;
+    height: 50rem;
+    margin-top: calc(var(--header__height) - 4rem);
     
     .image{
         width: 100%;

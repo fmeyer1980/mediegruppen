@@ -1,5 +1,5 @@
 ---
-title: "Historien om Tage – en historie, der gjorde indtrykdd"
+title: "Skal du på hold med Danmarks mest ambitiøse sundhedskommunikatører?"
 description: Beskrivelse af hvad siden handler om.
 author: "Kristine Buske"
 excerpt: >-

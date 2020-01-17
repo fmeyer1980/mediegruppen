@@ -16,10 +16,6 @@
         color: $white;
 
         &:hover{
-            -webkit-box-shadow: 5px 5px 1px 0px rgba(0,0,0,0.15);
-            -moz-box-shadow: 5px 5px 1px 0px rgba(0,0,0,0.15);
-            box-shadow: 5px 5px 1px 0px rgba(0,0,0,0.15);
-            transform: scale3d(1.07, 1.07, 1);
         }
     }
 

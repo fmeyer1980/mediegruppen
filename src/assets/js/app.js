@@ -16,7 +16,10 @@ var blogSlider = new Glide('#blog-slider', {
     navigation: true,
     gap: 30,
     breakpoints: {
-      800: {
+      1200: {
+        perView: 3
+      },
+      900: {
         perView: 2
       },
       480: {
