@@ -145,6 +145,9 @@
 
             .image-wrapper{
                 position: relative;
+                overflow: hidden;
+                padding-top: 560px / 420px * 100% / 2;
+                background-color: $light-gray-dark;
 
                 .tag{
                     position: absolute;
@@ -160,8 +163,14 @@
                 }
 
                 .image{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
                     display: block;
                     width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: 50% 50%;
                 }
             }
 
@@ -187,6 +196,19 @@
         .image{
             width: 100%;
             display: block;
+        }
+
+        .main__content{
+
+            &__image-wrapper{
+                height: 60rem;
+    
+                .image{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
         }
 
         
