@@ -1,4 +1,20 @@
 .main{
+
+    /*----- MEDIA VARIABLER -----*/
+
+    --right-sidebar__col: 1fr .5fr;
+
+
+    @media (max-width: $screen-sm) {
+
+        --right-sidebar__col: 1fr;
+
+    }
+
+
+    /*----- STYLING -----*/
+
+
     position: relative;
 
     h2{
@@ -16,7 +32,7 @@
 
         .container{
             display: grid;
-            grid-template-columns: 1fr .5fr;
+            grid-template-columns: var(--right-sidebar__col);
             grid-gap: calc(var(--gutter) * 2);
         }
         
