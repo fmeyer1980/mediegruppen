@@ -2,7 +2,7 @@
 layout: "layouts/frontpage.njk"
 title: "Forside"
 description: Beskrivelse af hvad siden handler om.
-hero_video: "hero-video"
+cover_video: "hero-video"
 about: 
   heading: "Vi hjælper dig med at skabe forandring"
   excerpt: >-

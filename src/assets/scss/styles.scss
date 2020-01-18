@@ -17,6 +17,7 @@
 @import "_components/footer";
 @import "_components/newsletter";
 @import "_components/services-nav";
+@import "_components/team";
 
 @import "_layouts/main";
 
@@ -55,7 +56,7 @@ $max_font: 10px;
   --section-padding: 7rem;
   --section-padding__small: 4rem;
   --section-padding__large: 10rem;
-  --gutter: 3rem;
+  --gutter: 2rem;
   --header__height: 14rem;
 
   --container-padding: 8vw;
