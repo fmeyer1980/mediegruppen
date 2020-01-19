@@ -23,21 +23,6 @@
         &__slider{
             position: relative;
 
-            // .glide__track{
-            //     height: 100%;
-
-            //     .glide__slides{
-            //         height: 100%;
-            //         border: 1px solid red;
-            //         display: flex;
-            //         justify-content: space-between;
-
-            //         .glide__slide{
-            //             height: 100%;
-            //         }
-            //     }
-            // }
-
             .arrows{
                 position: absolute;
                 top: 40%;
@@ -83,13 +68,13 @@
             .glide__bullets{
                 display: flex;
                 justify-content: center;
-                margin: var(--gutter) auto;
+                margin: calc(var(--gutter) * 2) auto;
 
 
                 .glide__bullet{
                     border: 1px solid $dark-gray-dark;
-                    width: 1.5rem;
-                    height: 1.5rem;
+                    width: 1.8rem;
+                    height: 1.8rem;
                     border-radius: 50%;
                     background-color: transparent;
                     transition: background-color .2s ease;

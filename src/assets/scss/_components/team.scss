@@ -8,6 +8,10 @@
         --team--home__grid-col: repeat(2, 1fr);
     }
 
+    @media (max-width: $screen-xs) {
+        --team--home__grid-col: 1fr;
+    }
+
 
 
     /*----- STYLING -----*/
