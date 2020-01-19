@@ -15,11 +15,9 @@
 
         background-color: $light-gray-light;
         padding: var(--section-padding) 0;
-
-        .container{
-            display: flex;
-            flex-direction: column;
-        }
+        display: flex;
+        flex-direction: column;
+        @extend .container;
 
 
         &__slider{
