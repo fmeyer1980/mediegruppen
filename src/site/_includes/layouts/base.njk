@@ -15,11 +15,11 @@
     <body class="{{ eleventyNavigation.key }}">
         {% include "components/header.njk" %}
 
-        <div id="swup" class="transition-fade">
+
             {% block content %}
             
             {% endblock content %}
-         </div>
+
         {% include "components/footer.njk" %}
         <script src="/assets/js/script.js" defer></script>
         <script defer>

@@ -12,24 +12,17 @@
 
     .top{
         padding: 5rem;
-
-        .container{
-            display: grid;
-            grid-template-columns: var(--footer__top__grid-columns);
-            grid-gap: calc(var(--gutter) * 2);
-        }
+        display: grid;
+        grid-template-columns: var(--footer__top__grid-columns);
+        grid-gap: calc(var(--gutter) * 2);
     }
 
     .bottom{
         padding: 3rem;
         background-color: darken($secondary, 10%);
-        
-
-        .container{
-            display: flex;
-            align-items: center;
-            opacity: .7;
-        }
+        display: flex;
+        align-items: center;
+        opacity: .7;
 
         .logo{
 

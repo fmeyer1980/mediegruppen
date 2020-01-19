@@ -14,7 +14,7 @@ var blogSlider = new Glide('#blog-slider', {
     type: 'carousel',
     perView: 4,
     navigation: true,
-    gap: 30,
+    gap: 20,
     breakpoints: {
       1200: {
         perView: 3
@@ -28,22 +28,6 @@ var blogSlider = new Glide('#blog-slider', {
     }
   })
 
-  var employeSlider = new Glide('#employe-slider', {
-    type: 'carousel',
-    perView: 4,
-    navigation: true,
-    gap: 30,
-    breakpoints: {
-      800: {
-        perView: 2
-      },
-      480: {
-        perView: 1
-      }
-    }
-  })
-  
 blogSlider.mount()
-employeSlider.mount()
 
 // const swup = new Swup();

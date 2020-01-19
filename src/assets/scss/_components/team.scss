@@ -17,7 +17,7 @@
         .image-wrapper{
             position: relative;
             overflow: hidden;
-            padding-top: 560px / 420px * 100% / 2;
+            padding-top: 420px / 560px * 100%;
             background-color: $light-gray-dark;
             
             .image{
@@ -35,15 +35,13 @@
         
     }
 
-
     &--home{
-        padding: var(--section-padding) 0;
-
-        .container{
-            display: grid;
-            grid-template-columns: var(--team--home__grid-col);
-            grid-gap: var(--gutter);
-        }
+        @extend .container;
+        padding-top: var(--section-padding);
+        padding-bottom: var(--section-padding);
+        display: grid;
+        grid-template-columns: var(--team--home__grid-col);
+        grid-gap: var(--gutter);
     }
 
     &--list{

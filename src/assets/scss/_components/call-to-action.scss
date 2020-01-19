@@ -3,9 +3,12 @@
     padding: var(--section-padding) 0;
     color: $white;
     text-align: center;
+    @extend .container;
+
     .heading{
         max-width: 60ch;
         margin: 0 auto;
         font-style: italic;
     }
+    
 }

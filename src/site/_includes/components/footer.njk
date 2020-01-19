@@ -1,29 +1,24 @@
 <footer class="footer">
     <div class="top">
-        <div class="container">
-            <div class="info">
-                <img loading="lazy" src="{{ settings.claudinaryUrl }}c_scale,f_auto,q_auto{{ settings.claudinaryFolder }}splatter" alt="Splatter">}
-                <ul>
-                    <li>design:kommunikation as</li>
-                    <li>{{ settings.address }}</li>
-                    <li>{{ settings.zipCode }}</li>
-                    <li><a href="mailto:{{ settings.mail }}">{{ settings.mail }}</a></li>
-                    <li><a href="tel:{{ settings.phone }}">{{ settings.phone }}</a></li>
-                </ul>
-            </div>
-
-            <div class="contact">
-                <p class="heading h4">Det brænder vi for</p>
-                <nav class="services-nav dark">
-                    {% include "components/services-nav.njk" %}
-                </nav>
-            </div>
+        <div class="info">
+            <img loading="lazy" src="{{ settings.claudinaryUrl }}c_scale,f_auto,q_auto{{ settings.claudinaryFolder }}splatter" alt="Splatter">}
+            <ul>
+                <li>design:kommunikation as</li>
+                <li>{{ settings.address }}</li>
+                <li>{{ settings.zipCode }}</li>
+                <li><a href="mailto:{{ settings.mail }}">{{ settings.mail }}</a></li>
+                <li><a href="tel:{{ settings.phone }}">{{ settings.phone }}</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <p class="heading h4">Det brænder vi for</p>
+            <nav class="services-nav dark">
+                {% include "components/services-nav.njk" %}
+            </nav>
         </div>
     </div>
     <div class="bottom">
-        <div class="container">
-            <a class="logo" href="/">{{ '/src/assets/images/logo_white.svg' | svgContents | safe }}</a>
-            <span class="copyright">Copyright © 2020 Mediegruppen. All rights reserved.</span>
-        </div>
+        <a class="logo" href="/">{{ '/src/assets/images/logo_white.svg' | svgContents | safe }}</a>
+        <span class="copyright">Copyright © 2020 Mediegruppen. All rights reserved.</span>
     </div>
 </footer>

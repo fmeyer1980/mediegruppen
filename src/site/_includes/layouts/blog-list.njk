@@ -4,11 +4,9 @@
 {% block content %}
     <main class="main">
         <div class="blog--list">
-            <div class="container">
-                {% for item in collections.blog %}
-                    {% include "components/blog--list.njk" %}
-                {% endfor %}
-            </div>
+            {% for item in collections.blog %}
+                {% include "components/blog--list.njk" %}
+            {% endfor %}
         </div>
     </main>
 {% endblock content %}

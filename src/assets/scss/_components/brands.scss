@@ -13,10 +13,8 @@
 .brands{
     background-color: $secondary;
     padding: 3rem 0;
-
-    .container{
-        overflow: hidden;
-    }
+    @extend .container;
+    overflow: hidden;
 
     &-wrapper{
         display: flex; 

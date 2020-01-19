@@ -13,9 +13,8 @@
 
 
     /*----- STYLING -----*/
-
-
     position: relative;
+    @extend .container;
 
     h2{
         font-size: 1.8rem;
@@ -29,13 +28,9 @@
     }
 
     &--right-sidebar{
-
-        .container{
-            display: grid;
-            grid-template-columns: var(--right-sidebar__col);
-            grid-gap: calc(var(--gutter) * 2);
-        }
-        
+        display: grid;
+        grid-template-columns: var(--right-sidebar__col);
+        grid-gap: calc(var(--gutter) * 2);
     }
 
     &__content{

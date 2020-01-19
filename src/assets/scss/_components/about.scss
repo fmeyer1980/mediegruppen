@@ -2,6 +2,7 @@
 
     &--home{
         padding: var(--section-padding) 0;
+        @extend .container;
 
         .top{
             display: flex;
