@@ -14,8 +14,10 @@
     &--primary{
         background-color: $primary;
         color: $white;
+        transition: color, background-color, .3s ease;
 
         &:hover{
+            background-color: $primary-dark;
         }
     }
 
