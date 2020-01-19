@@ -5,11 +5,23 @@
     --banner-height: 50rem;
 
     @media (max-width: $screen-sm) {
-        --banner-height: 30rem
+        --banner-height: 30rem;
     }
 
 
     /*----- STYLING -----*/
+
+    @keyframes video__fade-in {
+
+        0%{
+            opacity: 0;
+        }
+
+        100%{
+            opacity: 1;
+        }
+        
+    }
 
     position: relative;
     overflow: hidden;
@@ -28,5 +40,8 @@
         object-position: 50% 50%;
     }
 
+    .video{
+        animation: video__fade-in .3s ease-in backwards;
+    }
 
 }
