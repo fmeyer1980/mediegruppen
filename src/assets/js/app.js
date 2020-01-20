@@ -19,7 +19,7 @@ var blogSlider = new Glide('#blog-slider', {
       1200: {
         perView: 3
       },
-      900: {
+      992: {
         perView: 2
       },
       480: {
